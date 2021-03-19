@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap');
+/*google font*/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.5;
+	color: #fff;
+
+	position: relative;
+}
+
+h1, h2 {
+	line-height: 1.1;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: tomato;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*ends base*/
+
+.container {
+	width: 1280px;
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+.btn {
+	padding: 12px 35px;
+	border-radius: 50px;
+	border: 2px solid transparent;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+	cursor: pointer;
+	transition-duration: .3s;
+	transition-property: color, border, background, box-shadow;
+}
+
+.btn-bg {
+	background: #fff;
+	color: #006CEF;
+}
+
+.btn-bg:hover {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.btn-sq {
+	padding: 12px 25px;
+	border-radius: 5px;
+}
+
+.btn-brd {
+	padding: 14px 37px;
+	border: 2px solid #fff;
+}
+
+/*ends basic*/
+
+header {
+	padding: 40px 0px 30px;
+	background: transparent;
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+header .container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logo h2 {
+	font-size: 2em;
+	font-weight: 800;
+	color: #fff;
+	letter-spacing: 1.5px;
+	cursor: pointer;
+}
+
+header .logo h2 span {
+	display: inline-block;
+	width: 8px; height: 23px;
+	background: #ffef2e;
+	margin-right: 5px;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	display: inline-block;
+}
+
+header nav ul li a {
+	font-size: 1.1em;
+	font-weight: 600;
+	color: #CCE2FC;
+	margin: 0px 20px;
+	transition: .3s color;
+
+	position: relative;
+}
+
+header nav ul li a.active:after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	background: #ffef2e;
+	border-radius: 50%;
+
+	position: absolute;
+	top: -2px;
+	right: -8px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+	color: #fff;
+}
+
+/*ends header styling*/
+
+.hero {
+	height: 100vh;
+	padding: 180px 0px 100px;
+	background: #006CEF;
+
+	position: relative;
+}
+
+.hero .top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.hero .left {
+	width: 480px;
+	max-width: 100%;
+}
+
+.hero .left .description {
+	margin-bottom: 20px;
+}
+
+.hero .left .description h1 {
+	font-size: 4em;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.hero .left .description p {
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+.hero .left .pros p {
+	display: inline-block;
+	font-size: .9em;
+	margin-right: 10px;
+}
+
+.hero .left .pros p i {
+	display: inline-block;
+	color: #ffef2e;
+	margin-right: 5px;
+}
+
+.hero .left .action {
+	margin-top: 30px;
+}
+
+.hero .left .action a {
+	margin-right: 15px; 
+	margin-bottom: 15px;
+}
+
+.hero .left .action .btn-brd:hover {
+	box-shadow: 0 0 5px #0052b5, 0 0 15px #033877;
+}
+
+.hero .extenssion {
+	background: #0059c5;
+	padding: 10px;
+	border-radius: 8px;
+
+	position: absolute;
+	bottom: 50px;
+}
+
+.hero .extenssion .box {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.hero .extenssion p {
+	font-weight: 500;
+	margin-right: 60px;
+	position: relative;
+}
+
+.hero .extenssion p:after {
+	content: "";
+	width: 30px;
+	height: 2px;
+	background: #fff;
+
+	position: absolute;
+	top: 10px;
+	right: -49px;
+}
+
+.hero .extenssion .browsers img {
+	display: inline-block;
+	width: 25px;
+	height: auto;
+	margin: 0 10px;
+}
+
+/*hamburger design*/
+
+.hamb {
+	width: 40px;
+	height: 28px;
+	cursor: pointer;
+
+	position: absolute;
+	top: 50px;
+	right: 170px;
+	z-index: 5;
+
+	display: none;
+}
+
+.hamb span {
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	transition-duration: .3s;
+	transition-property: transform top bottom opacity;
+
+	position: relative;
+}
+
+.hamb span.mid {
+	margin: 9px 0;
+}
+
+.hamb.click span.top {
+	transform: rotate(-45deg);
+	top: 12px;
+}
+
+.hamb.click span.mid {
+	opacity: 0;
+}
+
+.hamb.click span.bottom {
+	transform: rotateZ(45deg);
+	bottom: 12px;
+}

@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1040px) {
+	.hero {
+		padding: 30vh 0px 100px;
+	}
+
+	.hero .top {
+		justify-content: space-around;
+	}
+
+	.hero .left {
+		width: 600px;
+		max-width: 90%;
+	}
+
+	.hero .left .description h1 {
+		font-size: 3em;
+	}
+
+	.hero .left .description p {
+		font-size: 1em;
+	}
+
+	.hero .left .action {
+		margin-top: 45px;
+	}
+
+	.hero .top .right {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 880px) {
+	.hamb {
+		display: block;
+	}
+
+	header nav {
+		width: 70%;
+		height: auto;
+		padding: 50px;
+		background-color: #212121;
+
+		position: absolute;
+		left: 103%;
+		right: 0px;
+		top: 120px;
+
+		overflow-x: hidden;
+		box-shadow: 0 0 5px #000000bf, 0 0 20px #0000004d;
+		transition-duration: .5s;
+		transition-timing-function: cubic-bezier(1, 0.04, 0.31, 0.94);
+		transition-property: left;
+	}
+
+	header nav.check {
+		left: 30%;
+	}
+
+	header nav ul li {
+		display: block;
+	}
+
+	header nav ul li a {
+		font-size: 1.3em;
+		font-weight: 600;
+		margin: 0px 0 25px;
+	}
+
+	header nav ul li:last-child a {
+		margin: 0px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.hero {
+		padding: 25vh 0px 100px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.hero .extenssion {
+		padding: 20px 40px;
+	}
+
+	.hero .extenssion .box {
+		display: block;
+		text-align: center;
+	}
+
+	.hero .extenssion p {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	.hero .extenssion p:after {
+		content: none;
+	}
+}
