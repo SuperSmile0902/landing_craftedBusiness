@@ -6,3 +6,6 @@ Learn how to create a responsive app landing page using HTML CSS and JavaScript.
 
 Thanks,
 [codermj](https://www.youtube.com/c/codermj)
+
+![preview](https://user-images.githubusercontent.com/76812554/111778994-baeb4f00-88df-11eb-9725-759c4781adc9.png)
+
